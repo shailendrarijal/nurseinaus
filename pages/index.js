@@ -14,9 +14,11 @@ export default function Index({ posts, globalData }) {
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
       <main className="w-full">
-        <h1 className="text-3xl lg:text-5xl text-center mb-12">
-          {globalData.blogTitle}
-        </h1>
+        <p className="text-center mb-12">
+        Hello, to whoever reading this blog. I am Aashika and welcome to my journey from an international student to a registered nurse in Australia.
+In this blog, I will be sharing my stories and experiences of my journey from being an international student in nursing to a student working as an assistant nurse to a registered nurse working in telehealth, regional aged care homes, city aged care homes and in hospital.
+
+        </p>
         <ul className="w-full">
           {posts.map((post) => (
             <li

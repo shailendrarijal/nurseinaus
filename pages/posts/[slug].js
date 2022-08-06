@@ -15,6 +15,7 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Layout, { GradientBackground } from '../../components/Layout';
 import SEO from '../../components/SEO';
+import DisqusComments from '../../components/DisqusComments';
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -85,6 +86,7 @@ export default function PostPage({
           )}
         </div>
       </article>
+      <DisqusComments title={frontMatter.title} slug={frontMatter.slug} />
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
         variant="large"
